@@ -23,6 +23,11 @@ class CKEditor5Widget extends InputWidget
 
     protected function renderTextarea()
     {
+        // Set a unique ID if not provided
+        if (!isset($this->options['id'])) {
+            $this->options['id'] = $this->getId();
+        }
+
         // Render the textarea with model binding if a model is set
         if ($this->hasModel()) {
             return Html::activeTextarea($this->model, $this->attribute, $this->options);

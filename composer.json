@@ -18,7 +18,12 @@
             "plathir\\yii2\\ckeditor5\\": ""
         }
     },
-    "extra": {
-        "bootstrap": "plathir\\yii2\\ckeditor5\\CKEditor5Widget"
-    }
+    
+	"extra": {
+		"asset-installer-paths": {
+			"npm-asset-library": "vendor/npm",
+			"bower-asset-library": "vendor/bower"
+		}
+	}    
+
 }
